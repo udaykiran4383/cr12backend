@@ -40,11 +40,7 @@ function About() {
                 ahead of the bloody Armada! */}
               </p>
               <p className="desc mb-4 max-w-[50%] text-pretty font-oswald relative z-[2]" data-aos="fade-up" data-aos-duration="1900">Ahoy, mateys! Gather 'round and lend yer ears. We're a crew of spirited young buccaneers, charting a course through the seas of change. At Abhyuday, we're not just students; we're the captains of tomorrow, hoisting the sails of leadership and steering towards a brighter horizon. We be on a mission to inspire and empower our fellow shipmates, showin' 'em the ropes of responsibility and the true meaning of camaraderie. Join us on this grand adventure, and together, we'll conquer the seven seas of positive change!</p>
-              <div>
-                <a href="#brilliant" className="green-btn scale">
-                  Blimey! Keep talkin', lad!
-                </a>
-              </div>
+              
             </div>
           </div>
         </div>
