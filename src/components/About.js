@@ -6,7 +6,7 @@ function About() {
   return (
     <section id="about" className="pb-3 bg-[#230c3c]">
       <span className="shape6">
-        <img src={strip} className="w-full" alt="strip-top" />
+        <img src={strip} className="w-full" alt="strip-top" draggable="false"/>
       </span>
       <div className="container z-[25]">
         <div>

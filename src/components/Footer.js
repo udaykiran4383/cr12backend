@@ -1,14 +1,20 @@
 import React from "react";
+import './Footer.css';
+import logo from "../assets/logo.png";
+import footer_left from "../assets/footer-left.png";
+import footer_right from "../assets/footer-right.png";
+import footer_gif from "../assets/footer-gif.gif";
+import SocialMediaBar from "./SocialMediaBar";
 
 function Footer() {
   return (
     <>
-      <footer id="footer-sec"  className="d-lg-block d-none">
-        <div  className="container">
-          <div  className="row">
-            <div  className="col-12">
-              <div  className="text-center pb-5 footer-links">
-                <h3  className="touch-title pb-3">More Information</h3>
+      <footer id="footer-sec" className="d-lg-block d-none bg-[#230c3c] overflow-hidden">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="text-center pb-5 footer-links">
+                <h3 className="touch-title pb-3">More Information</h3>
                 <a href="/legal/cookies-policy/">Cookies Policy</a>
                 <a href="/legal/privacy-policy/">Privacy Policy</a>
                 <a href="/legal/end-user-privacy-policy/">
@@ -20,31 +26,23 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div  className="row">
-            <div  className="col-12">
-              <div  className="text-center pb-5">
-                <h3  className="touch-title pb-3">Get In Touch</h3>
-                <a href="mailto:hi@bootyledger.com"  className="email-title">
-                  hi@bootyledger.com
-                </a>
+          <div className="row">
+            <div className="col-12">
+              <div className="text-center pb-5">
+                <h3 className="touch-title pb-3">Get In Touch</h3>
               </div>
             </div>
           </div>
-          <div  className="row align-items-center pt-3">
-            <div  className="footer-box align-items-center">
-              <div  className="footer-box-title">
-                <p  className="mb-0">
-                  &copy 2023 Bootyledger. Created by
-                  <a href="https://collabwire.io">collabwire.io</a>
-                </p>
+          <div className="row flex items-end justify-center pt-3">
+            <div className="mt-[190px] flex items-center justify-center">
+              <div className="footer-box-logo flex items-center justify-center relative z-[2]">
+                <img src={logo} alt="abhyuday logo" draggable="false"/>
               </div>
-              <div  className="footer-box-logo">
-                <img src="/images/Logo.png" alt="bootyledger logo" />
-              </div>
-              <div  className="social-media-icon">
-                <ul  className="mb-0">
+              <SocialMediaBar className="pl-2 mt-16"/>
+              {/* <div className="social-media-icon">
+                <ul className="mb-0">
                   <li
-                     className="scroll-icon wow fadeInRight animated"
+                    className="scroll-icon wow fadeInRight animated"
                     data-animate="fadeInRight"
                     data-delay="0.5s"
                   >
@@ -58,20 +56,20 @@ function Footer() {
                         viewBox="0 0 64 64"
                       >
                         <circle
-                           className="cls-1"
+                          className="cls-1"
                           cx="18.94"
                           cy="30.21"
                           r="16.39"
                         ></circle>
                         <ellipse
-                           className="cls-1"
+                          className="cls-1"
                           cx="44.7"
                           cy="30.21"
                           rx="8.01"
                           ry="15.16"
                         ></ellipse>
                         <ellipse
-                           className="cls-1"
+                          className="cls-1"
                           cx="57.49"
                           cy="30.21"
                           rx="2.75"
@@ -81,7 +79,7 @@ function Footer() {
                     </a>
                   </li>
                   <li
-                     className="scroll-icon wow fadeInRight animated"
+                    className="scroll-icon wow fadeInRight animated"
                     data-animate="fadeInRight"
                     data-delay="0.2s"
                   >
@@ -105,7 +103,7 @@ function Footer() {
                     </a>
                   </li>
                   <li
-                     className="scroll-icon wow fadeInRight animated"
+                    className="scroll-icon wow fadeInRight animated"
                     data-animate="fadeInRight"
                     data-delay="0.3s"
                   >
@@ -122,14 +120,14 @@ function Footer() {
                         viewBox="0 0 64 64"
                       >
                         <path
-                           className="cls-1"
+                          className="cls-1"
                           d="M23,58.87a16.36,16.36,0,0,1-5.93-1.09A14.79,14.79,0,0,1,8.74,50a16.39,16.39,0,0,1,2.44-17.69C14.78,28.19,19.75,26.4,26,27l-.43,7.64c-3.72-.36-6.67.45-8.61,2.69a8.9,8.9,0,0,0-1.3,9.48,7.29,7.29,0,0,0,4.17,3.87,9,9,0,0,0,5.36.32,8.29,8.29,0,0,0,4-2.2,7.94,7.94,0,0,0,2.12-5.57V7.79c0-.3,0-.61,0-.92L38.9,7v.73a13.31,13.31,0,0,0,3.9,8.53,13.72,13.72,0,0,0,9.91,4.24v7.62A21.19,21.19,0,0,1,38.9,23V43.23a15.41,15.41,0,0,1-4.32,10.92A15.85,15.85,0,0,1,27,58.38,16.59,16.59,0,0,1,23,58.87Z"
                         ></path>
                       </svg>
                     </a>
                   </li>
                   <li
-                     className="scroll-icon wow fadeInRight animated"
+                    className="scroll-icon wow fadeInRight animated"
                     data-animate="fadeInRight"
                     data-delay="0.4s"
                   >
@@ -143,14 +141,14 @@ function Footer() {
                         viewBox="0 0 64 64"
                       >
                         <path
-                           className="cls-1"
+                          className="cls-1"
                           d="M53.19,9.74,5.1,28.1a2,2,0,0,0,.14,3.75l11.32,3.38,5,14.91a1.57,1.57,0,0,0,2.58.63l6.94-6.62,13,9.44a2.08,2.08,0,0,0,3.26-1.27L55.62,11.8A1.81,1.81,0,0,0,53.19,9.74Zm-7,8.8-22,19.9-1.27,9.09L18.71,34.3,45.53,17.61A.58.58,0,0,1,46.23,18.54Z"
                         ></path>
                       </svg>
                     </a>
                   </li>
                   <li
-                     className="scroll-icon wow fadeInRight animated"
+                    className="scroll-icon wow fadeInRight animated"
                     data-animate="fadeInRight"
                     data-delay="0.5s"
                   >
@@ -167,14 +165,14 @@ function Footer() {
                         viewBox="0 0 64 64"
                       >
                         <path
-                           className="cls-1"
+                          className="cls-1"
                           d="M56.18,27.05a20.38,20.38,0,0,0-3.37-4.41c-4.22-4.31-11-8.38-20.41-13.16C16.62,1.5,8.76,13.29,8.76,25.41l-.17,8,.17,8c0,5.57,1.66,11,5,14.6,3.91,4.17,10.12,5.65,18.67,1.33C45,51,52.82,45.84,56.18,39.75a13.26,13.26,0,0,0,0-12.7Zm-16,8.58c-1.18,2.14-3.94,3.94-8.36,6.18-3,1.52-5.18,1-6.56-.47a7.63,7.63,0,0,1-1.75-5.13l-.06-2.81.06-2.81c0-4.26,2.76-8.41,8.31-5.6,3.32,1.68,5.7,3.11,7.18,4.62a7.2,7.2,0,0,1,1.18,1.56,4.65,4.65,0,0,1,0,4.46Z"
                         ></path>
                       </svg>
                     </a>
                   </li>
                   <li
-                     className="scroll-icon wow fadeInRight animated"
+                    className="scroll-icon wow fadeInRight animated"
                     data-animate="fadeInRight"
                     data-delay="0.6s"
                   >
@@ -195,34 +193,25 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <span  className="shape2 footer-shape">
-          <img
-            src="/images/footer-left.png"
-            width="100%"
-            alt="footer shape left"
-          />
+        <span className="shape2 footer-shape">
+          <img src={footer_left} alt="footer shape left" draggable="false"/>
         </span>
-        <span  className="shape3 footer-shape">
-          <img
-            src="/images/footer-right.png"
-            width="100%"
-            alt="footer shape right"
-          />
+        <span className="shape3 footer-shape">
+          <img src={footer_right} alt="footer shape right" draggable="false"/>
         </span>
-        <span  className="shape1 footer-shape">
+        <div className="h-16"></div>
+        <span className="shape1 footer-shape">
           <img
-            src="/images/footer-gif.gif"
-             className="gif"
+            src={footer_gif}
+            className="gif"
             width="100%"
             alt="footer shape"
+            draggable="false"
           />
-        </span>
-        <span  className="footer-shade footer-shape">
-          <div  className="color"></div>
         </span>
       </footer>
     </>

@@ -9,3 +9,7 @@
         after:transition after:duration-300 after:origin-center
     }
   }
+
+body{
+    cursor: url('./assets/sword1.svg'), auto;
+}

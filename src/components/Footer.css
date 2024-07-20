@@ -1,0 +1,67 @@
+#footer-sec h3.touch-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #F4EDDF;
+    opacity: 0.75
+}
+
+#footer-sec a.email-title {
+    font-family: 'Chelsea Market';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 71px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.footer-box li {
+    display: inline-block;
+    padding-left: 30px
+}
+
+#footer-sec {
+    padding: 100px 0 20px;
+    position: relative
+}
+
+.footer-shape {
+    position: absolute
+}
+
+#footer-sec .shape2 {
+    top: 92px;
+}
+
+#footer-sec .shape3 {
+    top: -2px;
+    right: -100px;
+    z-index: 0
+}
+
+.footer-box p {
+    font-family: 'Chelsea Market';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 23px;
+    color: #FFFFFF
+}
+footer .shape1 {
+    bottom: 0;
+    top: auto;
+    left: 0;
+    z-index: 0;
+    width: 100%
+}
+.container-top{
+    width: 100%;
+    height: 80px;
+    padding-top: 2px;
+}
