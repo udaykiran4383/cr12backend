@@ -213,11 +213,11 @@ const Nav = () => {
 
   return (
     <div
-      className={`w-full transition-all duration-200 ${
+      className={`w-full z-10 absolute transition-all duration-200 ${
         navSticky ? "bg-transparent" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center h-[10vh] lg:h-[12vh] justify-between w-4/5 mx-auto">
+      <div className="flex items-center z-10 h-[10vh] lg:h-[12vh] justify-between w-4/5 mx-auto">
         <ul className="lg:flex hidden items-center font-chelsea text-white space-x-10 lg:space-x-12 xl:space-x-14">
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link to="home" smooth={true} duration={500} className="nav_link">
@@ -229,7 +229,7 @@ const Nav = () => {
               to="about"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               About

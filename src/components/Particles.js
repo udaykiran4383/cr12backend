@@ -5,7 +5,9 @@ import { useCallback, useMemo } from 'react';
 function ParticlesComponent(props) {
     const options = useMemo(() => {
         return {
-            
+            // background:{
+            //     color: {value: "#230c3c"}
+            // },
             fullScreen:{
                 enabled: true,
                 zIndex: 0,
@@ -15,7 +17,7 @@ function ParticlesComponent(props) {
                     value: "#ffffff" // Particle color
                 },
                 number: {
-                    value: 50 // Number of particles
+                    value: 100 // Number of particles
                 },
                 size: {
                     value: {min:0.5, max:2} // Size of particles

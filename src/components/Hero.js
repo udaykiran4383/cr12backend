@@ -4,7 +4,7 @@ import banner from "../assets/banner-img.png";
 import boat from "../assets/boat.png";
 import moon from "../assets/moon.png";
 import SocialMediaBar from "./SocialMediaBar";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Hero() {
   useEffect(() => {
@@ -52,40 +52,51 @@ function Hero() {
               drive positive change while nurturing empathy and a deeper
               understanding of social challenges.
             </h2>
-            <button type="button" className="font-chelsea font-bold" data-aos='fade-up' data-aos-duration='1500'>
+            <button
+              type="button"
+              className="font-chelsea font-bold"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <Link to="https://www.google.com" className="register-btn">
                 REGISTER NOW
               </Link>
             </button>
           </div>
-          <div>
-              <Link to='#about' className="scroll-icon flex items-center justify-center">
-                <span>
-                  <svg
-                     className="scroll"
-                    width="193"
-                    height="194"
-                    viewBox="0 0 193 194"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="96.8333"
-                      cy="97"
-                      r="46.5833"
-                      stroke="white"
-                      strokeWidth="3"
-                    ></circle>
-                    <path
-                      d="M96.8392 20.0996C96.2355 20.0996 95.7461 20.589 95.7461 21.1927L95.7461 86.6834C95.7461 88.8184 93.1648 89.8876 91.6551 88.3779L90.7334 87.4562C90.3066 87.0294 89.6146 87.0294 89.1878 87.4562C88.761 87.883 88.761 88.5749 89.1878 89.0017L93.3036 93.1175C95.2563 95.0702 98.4221 95.0702 100.375 93.1175L104.491 89.0017C104.917 88.5749 104.917 87.883 104.491 87.4562C104.064 87.0294 103.372 87.0294 102.945 87.4562L102.023 88.3779C100.514 89.8876 97.9322 88.8184 97.9322 86.6834L97.9322 21.1927C97.9322 20.589 97.4428 20.0996 96.8392 20.0996Z"
-                      fill="white"
-                      stroke="white"
-                      strokeWidth="1.5"
-                    ></path>
-                  </svg>
-                </span>
-                <span  className="scroll-font">Scroll down</span>
-              </Link>
+          <div className="pb-32">
+            <Link
+              to="about"
+              smooth={true}
+              offset={-80}
+              duration={1000}
+              className="scroll-icon flex items-center justify-center"
+            >
+              <span>
+                <svg
+                  className="scroll cursor-pointer"
+                  width="193"
+                  height="194"
+                  viewBox="0 0 193 194"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="96.8333"
+                    cy="97"
+                    r="46.5833"
+                    stroke="white"
+                    strokeWidth="3"
+                  ></circle>
+                  <path
+                    d="M96.8392 20.0996C96.2355 20.0996 95.7461 20.589 95.7461 21.1927L95.7461 86.6834C95.7461 88.8184 93.1648 89.8876 91.6551 88.3779L90.7334 87.4562C90.3066 87.0294 89.6146 87.0294 89.1878 87.4562C88.761 87.883 88.761 88.5749 89.1878 89.0017L93.3036 93.1175C95.2563 95.0702 98.4221 95.0702 100.375 93.1175L104.491 89.0017C104.917 88.5749 104.917 87.883 104.491 87.4562C104.064 87.0294 103.372 87.0294 102.945 87.4562L102.023 88.3779C100.514 89.8876 97.9322 88.8184 97.9322 86.6834L97.9322 21.1927C97.9322 20.589 97.4428 20.0996 96.8392 20.0996Z"
+                    fill="white"
+                    stroke="white"
+                    strokeWidth="1.5"
+                  ></path>
+                </svg>
+              </span>
+              <span className="scroll-font  cursor-pointer">Scroll down</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -97,7 +108,7 @@ function Hero() {
           draggable="false"
         />
       </span>
-      <div className="h-screen">
+      <div>
         <span className="boat header-shape boatMove">
           <img src={boat} alt="Boat" draggable="false" />
         </span>
