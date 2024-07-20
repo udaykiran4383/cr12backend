@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .nav_link{
+        @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px]
+        after:bg-[#ffd700] text-white hover:text-[#ffd700] after:w-full font-medium after:scale-x-0 after:hover:scale-x-100
+        after:transition after:duration-300 after:origin-center
+    }
+  }

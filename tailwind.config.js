@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         oswald: ["oswald", "sans-serif"],
-        chelsea: ["chelsea", "sans-serif"],
+        chelsea: ["Chelsea Market", "sans-serif"],
         // calistoga: ["Calistoga", "sans-serif"],
         // crimson: ["Crimson Text", "serif"],
         // lato: ["Lato", "sans-serif"],

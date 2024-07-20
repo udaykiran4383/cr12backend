@@ -1,0 +1,260 @@
+#hero-section {
+    padding-top: 180px
+}
+/* For background */
+.shape1 {
+    position: relative;
+    overflow: hidden; /* Full viewport height */
+}
+
+.header-shape {
+    position: absolute;
+    top: 0;
+    left: 0;/* Ensure the container takes full height */
+    z-index: -1;
+}
+
+.banner-img {
+    width: 100%;
+    transform: scale(1.4);
+    -webkit-animation: Scale 5s forwards; /* For WebKit browsers */
+    animation: Scale 5s forwards; /* Standard syntax */
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+@-webkit-keyframes Scale {
+    from {
+        -webkit-transform: scale(1.4)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+@keyframes Scale {
+    from {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+/* For Boat */
+.boat {
+    position: absolute;
+    top: 70%;
+    z-index: -1
+}
+.boatMove {
+    -webkit-animation: Right 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s
+}
+@-webkit-keyframes Right {
+    from {
+        -webkit-transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(380px)
+    }
+}
+@keyframes Right {
+    from {
+        -webkit-transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(380px)
+    }
+}
+/* For MOON  */
+.moon {
+    top: 120%;
+    left: 81%;
+    z-index: -1;
+    right: 11%
+}
+.topMove {
+    -webkit-animation: Move 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s
+}
+
+@-webkit-keyframes Move {
+    from {
+        -webkit-transform: translate(0)
+    }
+    to {
+        -webkit-transform: translateY(-560px)
+    }
+}
+@keyframes Move {
+    from {
+        -webkit-transform: translate(0)
+    }
+    to {
+        -webkit-transform: translateY(-560px)
+    }
+}
+/* For SOCIAL MEDIA */
+.sc-icon {
+    position: absolute;
+    bottom: -50%;
+    right: 20px
+}
+.sc-icon li {
+    padding-bottom: 20px
+}
+
+.sc-icon li svg:hover path {
+    fill: #ffd700
+}
+
+.sc-icon li svg {
+    transition: 0.30s
+}
+
+.sc-icon li svg:hover {
+    transform: scale(1.2)
+}
+.scroll-icon {
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-family: 'Oswald'
+}
+.scroll-icon:hover {
+    color: #fff
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+/* For button */
+.register-btn {
+    width: 160px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 25px 3px #fff;
+    user-select: none;
+    -webkit-user-drag: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #000; 
+    text-decoration: none;
+}
+
+.register-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    z-index: 1;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+
+.register-btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    top: -25%;
+    left: -25%;
+    background: rgba(198, 16, 0, 0)
+}
+
+@-webkit-keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none
+    }
+}
+
+@keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75)
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none
+    }
+}
+/* for scroll icon  */
+.scroll-icon {
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-family: 'Oswald'
+}
+.scroll-icon:hover {
+    color: #fff
+}
+.scroll {
+    position: relative;
+    animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite
+}
+@keyframes down {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translateY(15px)
+    }
+    40% {
+        transform: translate(0)
+    }
+}
+@-webkit-keyframes down {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translateY(15px)
+    }
+    40% {
+        transform: translate(0)
+    }
+}
+.scroll-font{
+    position: relative;
+    left: -40px;
+}

@@ -1,11 +1,31 @@
-import "./App.css"; 
-import ParticlesComponent from "./components/Particles";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: false,
+        anchorPlacement: "top-bottom",
+      });
+    };
+
+    initAOS();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="App">
-      <ParticlesComponent id="tsparticles"/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
