@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
 import Incentives from "../components/Incentives";
 import Sponsors from "../components/Sponsors";
+// import Contact from "../components/Contact";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ function Home() {
           <About />
           <Incentives/>
           <Sponsors/>
+          {/* <Contact/> */}
           <Footer />
           <ParticlesComponent id="tsparticles" />
         </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import "./Sponsors.css";
 import boat from "../assets/boat.png";
-import coin from '../assets/coin.png'
+import coin from "../assets/coin.png";
 
 const Sponsors = () => {
   return (
@@ -11,7 +11,7 @@ const Sponsors = () => {
       <div className="flex flex-col justify-center items-center max-w-[85%] mx-auto pt-14 pb-14">
         <div className="flex justify-center items-center gap-4">
           <span>
-            <img src={coin} alt="Coin" className="coin"/>
+            <img src={coin} alt="Coin" className="coin" draggable="false" loading="lazy"/>
           </span>
           <h1
             className="sec-title font-chelsea mt-8 mb-8"
@@ -21,7 +21,7 @@ const Sponsors = () => {
             Sponsors
           </h1>
           <span>
-            <img src={coin} alt="Coin" className="coin"/>
+            <img src={coin} alt="Coin" className="coin" draggable="false" loading="lazy"/>
           </span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
