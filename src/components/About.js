@@ -12,7 +12,7 @@ function About() {
         <div>
           <div className="col-lg-10 col-12 mx-auto">
             <div className="text-center px-4 flex flex-col justify-center items-center">
-              <h2 className="sec-title font-chelsea" data-aos="fade-up" data-aos-duration="1500">About Us</h2>
+              <h1 className="sec-title font-chelsea" data-aos="fade-up" data-aos-duration="1500">About Us</h1>
               <p className="desc mb-4 max-w-[50%] text-pretty font-oswald relative z-[2]" data-aos="fade-up" data-aos-duration="1900">
                 Abhyuday , IIT Bombay is a student-led organization that fosters
                 youth responsibility & leadership in India, inspiring and

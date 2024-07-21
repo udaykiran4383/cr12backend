@@ -237,10 +237,10 @@ const Nav = () => {
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link
-              to="about"
+              to="incentives"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               Incentives
