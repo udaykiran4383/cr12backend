@@ -6,6 +6,7 @@ import incen1 from "../assets/incen1.jpeg";
 import incen2 from "../assets/incen2.jpeg";
 import incen3 from "../assets/incen3.jpeg";
 import incen4 from "../assets/incen4.jpeg";
+import SectionTitle from "./SectionTitle";
 
 function Incentives() {
   return (
@@ -16,21 +17,15 @@ function Incentives() {
             <Lottie
               animationData={treasure}
               loop={true}
-              className="treasure-svg"
+              className="treasure-svg pb-4"
             />
           </span>
-          <h1
-            className="sec-title text-center font-chelsea mt-12 mb-8"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Incentives
-          </h1>
+          <SectionTitle title="Incentives"/>
           <span>
             <Lottie
               animationData={treasure}
               loop={true}
-              className="treasure-svg"
+              className="treasure-svg pb-4"
             />
           </span>
         </div>

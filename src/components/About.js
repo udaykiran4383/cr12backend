@@ -1,6 +1,7 @@
 import React from "react";
 import strip from "../assets/Strip-Top.png";
 import "./About.css";
+import SectionTitle from "./SectionTitle";
 
 function About() {
   return (
@@ -12,7 +13,7 @@ function About() {
         <div>
           <div className="col-lg-10 col-12 mx-auto">
             <div className="text-center px-4 flex flex-col justify-center items-center">
-              <h1 className="sec-title font-chelsea" data-aos="fade-up" data-aos-duration="1500">About Us</h1>
+              <SectionTitle title="About Us"/>
               <p className="desc mb-4 max-w-[50%] text-pretty font-oswald relative z-[2]" data-aos="fade-up" data-aos-duration="1900">
                 Abhyuday , IIT Bombay is a student-led organization that fosters
                 youth responsibility & leadership in India, inspiring and

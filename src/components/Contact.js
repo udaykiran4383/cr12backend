@@ -5,22 +5,18 @@ import ritika from "../assets/ritika.jpg";
 import garvit from "../assets/garvit.jpg";
 import { ReactComponent as Insta } from "../assets/insta.svg";
 import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
+import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   return (
     <section id="contact" className="pb-3 pt-16 bg-[#230c3c] relative z-[0]">
-      <div className="flex flex-col justify-center items-center max-w-[85%] mx-auto pt-14 pb-14">
-        <div className="flex justify-center items-center gap-4">
-          <h1
-            className="sec-title font-chelsea mt-8 mb-8"
-            data-aos="fade-up"
-            // data-aos-duration="1000"
-          >
-            Contact Us
-          </h1>
+      <div className="flex flex-col justify-center items-center max-w-[85%] mx-auto pb-14">
+        <div className="flex justify-center items-center gap-4 pb-4">
+          
+          <SectionTitle title="Contact Us"/>
         </div>
         <div className="grid grid-cols-1  lg:grid-cols-3 gap-8">
-          <div className="card w-48 h-64 overflow-visible relative">
+          <div className="card w-48 h-64 overflow-visible relative" data-aos="fade-right">
             <div className="content w-full h-full transform-style-preserve-3d transition-transform duration-300 shadow-lg rounded-md">
               <div className="back w-full h-full absolute top-0 left-0 bg-gray-400 rounded-md flex items-center justify-center overflow-hidden">
                 <div className="back-content absolute w-[99%] h-[99%] bg-gray-400 rounded-md text-white flex flex-col items-center justify-center">
@@ -59,7 +55,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="card w-48 h-64 overflow-visible relative">
+          <div className="card w-48 h-64 overflow-visible relative" data-aos="fade-up">
             <div className="content w-full h-full transform-style-preserve-3d transition-transform duration-300 shadow-lg rounded-md">
               <div className="back w-full h-full absolute top-0 left-0 bg-gray-400 rounded-md flex items-center justify-center overflow-hidden">
                 <div className="flex justify-center items-center">
@@ -100,7 +96,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="card w-48 h-64 overflow-visible relative">
+          <div className="card w-48 h-64 overflow-visible relative" data-aos="fade-left">
             <div className="content w-full h-full transform-style-preserve-3d transition-transform duration-300 shadow-lg rounded-md">
               <div className="back w-full h-full absolute top-0 left-0 bg-gray-400 rounded-md flex items-center justify-center overflow-hidden">
                 <div className="flex justify-center items-center">
