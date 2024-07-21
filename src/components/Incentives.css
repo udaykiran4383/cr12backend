@@ -56,3 +56,18 @@
   color: #F4EDDF;
   padding-bottom: 20px
 }
+.treasure-svg{
+  width: 75px;
+  height: 75px;
+  filter: drop-shadow(0 0 10px #fedf4f);
+  animation: glow 0.8s infinite alternate;
+  margin: 4px;
+}
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px #fedf4f);
+  }
+  to {
+    filter: drop-shadow(0 0 15px #fedf4f);
+  }
+}

@@ -40,3 +40,31 @@
   object-fit: cover;
   transition: 0.6s;
 }
+.coin {
+  height: 55px;
+  width: 55px;
+  animation: rotationCoin 10s infinite linear;
+  z-index: -2 !important
+}
+
+#roadmap .coin1 {
+  left: 0;
+  top: 20px
+}
+
+@-webkit-keyframes rotationCoin {
+  from {
+      -webkit-transform: rotate(0deg)
+  }
+  to {
+      -webkit-transform: rotate(359deg)
+  }
+}
+@keyframes rotationCoin {
+  from {
+      -webkit-transform: rotate(0deg)
+  }
+  to {
+      -webkit-transform: rotate(359deg)
+  }
+}

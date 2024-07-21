@@ -10,6 +10,7 @@ function App() {
     const initAOS = async () => {
       const AOS = (await import("aos")).default;
       AOS.init({
+        offset:100,
         duration: 1000,
         easing: "ease",
         once: false,

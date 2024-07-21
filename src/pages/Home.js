@@ -23,7 +23,7 @@ function Home() {
     <>
       {loading && <Preloader />}
       {!loading && (
-        <div className="App">
+        <div className="App custom-scrollbar">
           <Header />
           <Hero />
           <About />
