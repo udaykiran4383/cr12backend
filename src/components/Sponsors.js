@@ -19,6 +19,7 @@ const Sponsors = () => {
           <div className="profile-card">
             <div className="img-container">
               <img
+                loading="lazy"
                 src={boat}
                 alt=""
                 data-aos="fade-up"
@@ -29,6 +30,7 @@ const Sponsors = () => {
           <div className="profile-card">
             <div className="img-container">
               <img
+                loading="lazy"
                 src={boat}
                 alt=""
                 data-aos="fade-up"
@@ -39,6 +41,7 @@ const Sponsors = () => {
           <div className="profile-card">
             <div className="img-container">
               <img
+                loading="lazy"
                 src={boat}
                 alt=""
                 data-aos="fade-up"
@@ -49,6 +52,7 @@ const Sponsors = () => {
           <div className="profile-card">
             <div className="img-container">
               <img
+                loading="lazy"
                 src={boat}
                 alt=""
                 data-aos="fade-up"

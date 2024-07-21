@@ -16,23 +16,39 @@ function Incentives() {
         >
           Incentives
         </h1>
-        <div className="flex justify-between items-center flex-wrap gap-x-4">
-          <div className="flip-card" data-aos="fade-up"
-          data-aos-duration="1500">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            className="flip-card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={incen1} alt="Front" className="flip-card-image" />
+                <img
+                  src={incen1}
+                  alt="Front"
+                  className="flip-card-image"
+                  loading="lazy"
+                />
               </div>
               <div className="flip-card-back">
                 <p>Get connected to us!</p>
               </div>
             </div>
           </div>
-          <div className="flip-card" data-aos="fade-up"
-          data-aos-duration="1500">
+          <div
+            className="flip-card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={incen2} alt="Front" className="flip-card-image" />
+                <img
+                  src={incen2}
+                  alt="Front"
+                  className="flip-card-image"
+                  loading="lazy"
+                />
               </div>
               <div className="flip-card-back">
                 <img
@@ -43,11 +59,19 @@ function Incentives() {
               </div>
             </div>
           </div>
-          <div className="flip-card" data-aos="fade-up"
-          data-aos-duration="1500">
+          <div
+            className="flip-card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={incen3} alt="Front" className="flip-card-image" />
+                <img
+                  src={incen3}
+                  alt="Front"
+                  className="flip-card-image"
+                  loading="lazy"
+                />
               </div>
               <div className="flip-card-back">
                 <img
@@ -58,11 +82,19 @@ function Incentives() {
               </div>
             </div>
           </div>
-          <div className="flip-card" data-aos="fade-up"
-          data-aos-duration="1500">
+          <div
+            className="flip-card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={incen4} alt="Front" className="flip-card-image" />
+                <img
+                  src={incen4}
+                  alt="Front"
+                  className="flip-card-image"
+                  loading="lazy"
+                />
               </div>
               <div className="flip-card-back">
                 <img
