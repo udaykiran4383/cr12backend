@@ -255,10 +255,10 @@ const Nav = () => {
         <ul className="lg:flex hidden items-center font-chelsea text-white space-x-10 lg:space-x-12 xl:space-x-14">
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link
-              to="testimonials"
+              to="sponsors"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               Sponsors

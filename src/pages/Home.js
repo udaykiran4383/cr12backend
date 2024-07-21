@@ -6,6 +6,7 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
 import Incentives from "../components/Incentives";
+import Sponsors from "../components/Sponsors";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function Home() {
           <Hero />
           <About />
           <Incentives/>
+          <Sponsors/>
           <Footer />
           <ParticlesComponent id="tsparticles" />
         </div>

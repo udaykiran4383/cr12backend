@@ -7,7 +7,7 @@ import incen4 from "../assets/incen4.jpeg";
 
 function Incentives() {
   return (
-    <section className="bg-[#230c3c] relative z-[25] pt-16" id="incentives">
+    <section className="bg-[#230c3c] pt-16" id="incentives">
       <div className="flex flex-col justify-center items-center bg-[#230c3c] max-w-[85%] mx-auto">
         <h1
           className="sec-title font-chelsea mt-8 mb-8"
