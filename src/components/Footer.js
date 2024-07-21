@@ -12,11 +12,10 @@ function Footer() {
     <>
       <footer
         id="footer-sec"
-        className="d-lg-block d-none bg-[#230c3c] overflow-hidden"
+        className="d-none bg-[#230c3c] w-full"
       >
         <div className="container">
           <Contact />
-          <div className="row"></div>
           <div className="row flex items-end justify-center pt-3">
             <div className="mt-[190px] flex items-center justify-center">
               <div className="footer-box-logo flex items-center justify-center relative z-[2]">

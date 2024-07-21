@@ -10,9 +10,9 @@
     }
   }
 
-body{
+/* body{
     cursor: url('./assets/sword1.svg'), auto;
-}
+} */
 body::-webkit-scrollbar {
     width: 8px;
   }

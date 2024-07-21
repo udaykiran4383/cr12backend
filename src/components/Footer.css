@@ -1,12 +1,13 @@
-
 .footer-box li {
     display: inline-block;
     padding-left: 30px
 }
 
 #footer-sec {
-    padding: 10px 0 20px;
-    position: relative
+    /* padding: 10px 0 20px; */
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
 }
 
 .footer-shape {
@@ -14,12 +15,13 @@
 }
 
 #footer-sec .shape2 {
-    top: 92px;
+    bottom: 200px;
+    left: -60px;
     z-index: 0;
 }
 
 #footer-sec .shape3 {
-    top: 20px;
+    bottom: 200px;
     right: -100px;
     z-index: 0
 }
