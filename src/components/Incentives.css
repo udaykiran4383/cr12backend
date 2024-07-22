@@ -1,4 +1,4 @@
-.flip-card {
+/* .flip-card {
   background-color: transparent;
   width: 190px;
   height: 254px;
@@ -47,7 +47,7 @@
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  object-fit: cover; /* Adjust this property to fit your image properly */
+  object-fit: cover;
 }
 .sec-title {
   font-weight: 400;
@@ -59,6 +59,146 @@
 .treasure-svg{
   width: 75px;
   height: 75px;
+  filter: drop-shadow(0 0 10px #fedf4f);
+  animation: glow 0.8s infinite alternate;
+  margin: 4px;
+}
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px #fedf4f);
+  }
+  to {
+    filter: drop-shadow(0 0 15px #fedf4f);
+  }
+} */
+
+.campaigns-container1 {
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper1 {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .wrapper1 {
+    margin-top: 120px;
+  }
+}
+
+.cols1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .cols1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.col1 {
+  width: calc(30% - 2rem);
+  margin: 3rem;
+  cursor: pointer;
+}
+
+.profile-card1 {
+  position: relative;
+  font-family: sans-serif;
+  width: 220px;
+  height: 220px;
+  background-color: #f7f4f482;
+  padding: 1.5rem;
+  border-radius: 10%;
+  box-shadow: 0 0 22px rgba(51, 51, 54, 0.35);
+  transition: 0.6s;
+}
+
+.profile-card1:hover {
+  border-radius: 10px;
+  height: 300px;
+}
+
+.profile-card1:hover .img-container1 {
+  transform: translateY(-20px);
+}
+
+.profile-card1:hover img {
+  /* border-radius: 10px; */
+  opacity: 1;
+}
+
+.img-container1 {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  transition: 0.6s;
+  z-index: 0;
+}
+
+.img-container1 img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(51, 51, 54, 1);
+  transition: 0.6s;
+  background-color: #ffffffac;
+}
+
+.caption1 {
+  text-align: center;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.profile-card1:hover .caption1 {
+  margin-top: 2px;
+  opacity: 1;
+}
+
+.caption1 p {
+  font-size: 15px;
+  color: #0c52a1;
+  font-family: sans-serif;
+  margin: 2px 0 9px 0;
+}
+
+.caption1 h4 {
+  color: black;
+  font-family: "Lato", sans-serif, cursive;
+}
+
+.name1{
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.75em;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.front1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.treasure-svg{
+  width: 95px;
+  height: 95px;
   filter: drop-shadow(0 0 10px #fedf4f);
   animation: glow 0.8s infinite alternate;
   margin: 4px;

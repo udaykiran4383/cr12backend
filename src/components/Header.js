@@ -265,9 +265,15 @@ const Nav = () => {
             </Link>
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
-            <RouterLink to="https://www.google.com" className="nav_link">
+          <Link
+              to="faqs"
+              smooth={true}
+              offset={-80}
+              duration={1000}
+              className="nav_link"
+            >
               FAQs
-            </RouterLink>
+            </Link>
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link

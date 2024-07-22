@@ -8,6 +8,8 @@ import Preloader from "../components/Preloader";
 import Incentives from "../components/Incentives";
 import Sponsors from "../components/Sponsors";
 import Contact from "../components/Contact";
+import FAQs from "../components/FAQs";
+import WhyUs from "../components/WhyUs";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -28,8 +30,10 @@ function Home() {
           <Header />
           <Hero />
           <About />
+          <WhyUs/>
           <Incentives/>
           <Sponsors/>
+          <FAQs/>
           {/* <Contact/> */}
           <Footer />
           <ParticlesComponent id="tsparticles" />
