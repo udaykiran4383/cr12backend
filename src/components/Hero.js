@@ -26,19 +26,19 @@ function Hero() {
     };
   }, []);
   return (
-    <section id="hero-section">
+    <section id="hero-section" >
       <div className="container">
         <div className="flex flex-col justify-center items-start mx-auto space-y-24">
           <div className="flex flex-col justify-center items-center mx-auto">
             <h1
-              className="font-chelsea text-[#F4EDDF] text-[65px] font-normal "
+              className="font-chelsea text-[#F4EDDF] text-[20px] lg:text-[65px] font-normal "
               data-aos="fade-up"
               data-aos-duration="1500"
             >
               COLLEGE REPRESENTATIVE
             </h1>
             <h2
-              className="font-oswald text-[#F4EDDF] text-[21px] text-opacity-75 font-normal pt-2 pb-8 max-w-[85%] text-justify"
+              className="font-oswald text-[#F4EDDF]  text-[11px] lg:text-[21px] text-opacity-75 font-normal pt-2 pb-8 max-w-[85%] text-justify"
               data-aos="fade-up"
               data-aos-duration="1900"
             >
@@ -63,7 +63,7 @@ function Hero() {
               </Link>
             </button>
           </div>
-          <div className="pb-32">
+          <div className="lg:pb-32 mob">
             <Link
               to="about"
               smooth={true}
@@ -95,7 +95,7 @@ function Hero() {
                   ></path>
                 </svg>
               </span>
-              <span className="scroll-font  cursor-pointer">Scroll down</span>
+              <span className="scroll-font  cursor-pointer bg-[#230c3c]">Scroll down</span>
             </Link>
           </div>
         </div>

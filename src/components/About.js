@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 function About() {
   return (
-    <section id="about" className="pb-3 bg-[#230c3c]">
+    <section id="about" className="pb-3 bg-[#230c3c] pt-16">
       <span className="shape6">
         <img src={strip} className="w-full" alt="strip-top" draggable="false" />
       </span>
@@ -15,7 +15,7 @@ function About() {
             <div className="text-center px-4 flex flex-col justify-center items-center">
               <SectionTitle title="About Us" />
               <p
-                className="desc mb-4 max-w-[50%] text-pretty font-oswald relative z-[2]"
+                className="desc mb-4 lg:max-w-[50%] max-w-[60%] text-start lg:text-pretty font-oswald relative z-[2]"
                 data-aos="fade-up"
                 data-aos-duration="1900"
               >
@@ -23,28 +23,9 @@ function About() {
                 youth responsibility & leadership in India, inspiring and
                 empowering young individuals to contribute to society and drive
                 positive change through various initiatives. <br />
-                {/* Aye me matey! So
-                yer chest of treasures is awash with a variety of assets. And
-                rightly, bloody, so! Assets, savings, stocks, investments,
-                crypto…a self-respecting pirate has it all in their booty. Want
-                to track their performance in real time, then? Aye, don't we
-                all. Alas!
-                <br />
-                <br />
-                Majority of these blasted portfolio trackers allow their users
-                to track only a single type of asset. Of what use then, yer
-                right to ask, is a log that only tells its captain one part of
-                the story? Unless you download all them apps… but then again,
-                wasn't diversification supposed to lead us on a star-lit pathway
-                to freedom rather than gout from obsessively refreshing all the
-                bloody apps!? Arrr! <br />
-                <br />
-                BootyLedger allows you to grab the helm of yer financial ship
-                and steer it wisely in real-time. Always keep a few leagues
-                ahead of the bloody Armada! */}
               </p>
               <p
-                className="desc mb-4 max-w-[50%] text-pretty font-oswald relative z-[2]"
+                className="desc mb-4 lg:max-w-[50%] max-w-[60%] text-start lg:text-pretty font-oswald relative z-[2]"
                 data-aos="fade-up"
                 data-aos-duration="1900"
               >

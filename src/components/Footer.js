@@ -70,46 +70,50 @@ import SocialMediaBarHorizontal from "./SocialMediaBarHorizontal";
 
 function Footer() {
   return (
-    <footer
-      id="footer"
-      className="bg-[#230c3c] overflow-x-hidden overflow-y-visible pt-16"
-    >
+    <>
       <Contact />
-      <span className="shape-left">
-        <img
-          src={footer_left}
-          alt="footer shape left"
-          draggable="false"
-          loading="lazy"
-        />
-      </span>
-      <span className="shape-right">
-        <img
-          src={footer_right}
-          alt="footer shape right"
-          draggable="false"
-          loading="lazy"
-        />
-      </span>
-      <div>
-        <span className="gif">
+      <footer
+        id="footer"
+        className="bg-[#230c3c] overflow-x-hidden overflow-y-visible pt-16"
+      >
+        <span className="shape-left">
           <img
-            src={footer_gif}
-            className=""
-            width="100%"
-            alt="footer shape"
+            className="image1"
+            src={footer_left}
+            alt="footer shape left"
             draggable="false"
             loading="lazy"
           />
         </span>
-        <div className="footer-box-logo absolute z-[2]">
-          <img src={logo} alt="abhyuday logo" draggable="false" />
+        <span className="shape-right">
+          <img
+            className="image2"
+            src={footer_right}
+            alt="footer shape right"
+            draggable="false"
+            loading="lazy"
+          />
+        </span>
+        <div className="lg:pt-[20px] mydiv">
+          <span className="gif">
+            <img
+              src={footer_gif}
+              className=""
+              width="100%"
+              alt="footer shape"
+              draggable="false"
+              loading="lazy"
+            />
+          </span>
+          <div className="footer-box-logo absolute z-[2]">
+            <img src={logo} alt="abhyuday logo" draggable="false" />
+          </div>
+          <div className="footer-social absolute z-[2]">
+            <SocialMediaBarHorizontal className="flex-row footer-social" />
+          </div>
         </div>
-        <div className="footer-social absolute z-[2]">
-          <SocialMediaBarHorizontal className="flex-row footer-social"/>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
 

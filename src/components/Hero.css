@@ -258,3 +258,53 @@
     position: relative;
     left: -40px;
 }
+@media screen and (max-width: 576px) {
+
+    #hero-section {
+    padding-top: 150px
+    }
+    .banner-img {
+        height: 585px;
+    }
+    .mob{
+        width: 100%;
+        background-color: #230c3c;
+    }
+    .boat{
+        top: 30%;
+    }
+    .boatMove img {
+        width: 50%
+    }
+    @-webkit-keyframes Right {
+        from {
+            -webkit-transform: translateX(0)
+        }
+        to {
+            -webkit-transform: translateX(130px)
+        }
+    }
+    @keyframes Right {
+        from {
+            -webkit-transform: translateX(0)
+        }
+        to {
+            -webkit-transform: translateX(130px)
+        }
+    }
+    .moon{
+        top:70%;
+    }
+    .sc-icon {
+        bottom: -20%;
+        right: 5px;
+    }
+    .scroll{
+        height: 100px;
+        left: -50%;
+    }
+    .scroll-font{
+        font-size: 20px;
+        left:-35%;
+    }
+}

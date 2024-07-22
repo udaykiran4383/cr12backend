@@ -4,9 +4,9 @@ import { ReactComponent as Linkedin } from '../assets/linkedin.svg';
 
 function SocialMediaBarHorizontal() {
   return (
-    <ul className="sc-icon text-white flex flex-row justify-center items-center gap-8">
+    <ul className="sc-icon text-white flex flex-row justify-center items-center gap-4 lg:gap-8">
         <li>
-        <div className="w-16 h-0.5 bg-gray-300"></div>
+        <div className="w-16 h-0.5 bg-gray-300 hidden lg:block"></div>
       </li>
       <li
         className="scroll-icon fadeInRight animated"
@@ -70,7 +70,7 @@ function SocialMediaBarHorizontal() {
         </a>
       </li>
       <li>
-        <div className="w-16 h-0.5 bg-gray-300"></div>
+        <div className="w-16 h-0.5 bg-gray-300 hidden lg:block"></div>
       </li>
     </ul>
   );

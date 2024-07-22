@@ -13,9 +13,9 @@ const Contact = () => {
       <div className="flex flex-col justify-center items-center max-w-[85%] mx-auto pb-14">
         <div className="flex justify-center items-center gap-4 pb-4">
           
-          <SectionTitle title="Contact Us"/>
+        <SectionTitle title="Contact Us"/>
         </div>
-        <div className="grid grid-cols-1  lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="card w-48 h-64 overflow-visible relative" data-aos="fade-right">
             <div className="content w-full h-full transform-style-preserve-3d transition-transform duration-300 shadow-lg rounded-md">
               <div className="back w-full h-full absolute top-0 left-0 bg-gray-400 rounded-md flex items-center justify-center overflow-hidden">

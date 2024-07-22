@@ -9,6 +9,12 @@
         after:transition after:duration-300 after:origin-center
     }
   }
+  html {
+    scroll-behavior: smooth
+}
+body{
+  overflow-x: hidden;
+}
 
 /* body{
     cursor: url('./assets/sword1.svg'), auto;
