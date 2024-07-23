@@ -31,6 +31,8 @@ const Contact = () => {
                       />
                     </div>
                     <h2 className="text-lg font-bold">Pramod Sai</h2>
+                    <div className="h-0.5 bg-gray-300 w-full"></div>
+                    <h2 className="text-md text-gray-300 font-bold font-oswald">Media & PR Head</h2>
                     <a href="tel:+918919642307">+91 8919642307</a>
                     <div className="social-media flex justify-center items-center gap-4">
                       <span>
@@ -70,7 +72,9 @@ const Contact = () => {
                           loading="lazy"
                         />
                       </div>
-                      <h2 className="text-lg font-bold">Ritika</h2>
+                      <h2 className="text-lg font-bold">Ritika Sirohiya</h2>
+                    <div className="h-0.5 bg-gray-300 w-full"></div>
+                    <h2 className="text-md text-gray-300 font-bold font-oswald">Media & PR Head</h2>
                       <a href="tel:+918919642307">+91 9599265453</a>
                       <div className="social-media flex justify-center items-center gap-4">
                         <span>
@@ -112,6 +116,8 @@ const Contact = () => {
                         />
                       </div>
                       <h2 className="text-lg font-bold">Garvit Kulhari</h2>
+                    <div className="h-0.5 bg-gray-300 w-full"></div>
+                    <h2 className="text-md text-gray-300 font-bold font-oswald">Media & PR Head</h2>
                       <a href="tel:+918919642307">+91 9664169359</a>
                       <div className="social-media flex justify-center items-center gap-4">
                         <span>

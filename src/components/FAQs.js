@@ -40,7 +40,7 @@ function FAQ() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col justify-center items-center">
         <SectionTitle title="FAQs"/>
-        <h2 className="text-center font-oswald text-xl text-gray-300 pb-3">What d'ya wanna know, matey?</h2>
+        <h2 className="text-center font-oswald text-xl text-gray-300 pb-3" data-aos="fade-up">What d'ya wanna know, matey?</h2>
           <div className="grid w-[75%]  grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
             {faqs.map((item, index) => (
               <div className="faq-item" key={index} data-aos="fade-up">

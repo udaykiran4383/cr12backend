@@ -18,7 +18,7 @@ function Home() {
     // Simulate a network request
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the timeout as needed
+    }, 2500); // Adjust the timeout as needed
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,7 +26,7 @@ function Home() {
     <>
       {loading && <Preloader />}
       {!loading && (
-        <div className="App custom-scrollbar">
+        <div className="App custom-scrollbar overflow-hidden">
           <Header />
           <Hero />
           <About />

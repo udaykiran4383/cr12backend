@@ -144,7 +144,7 @@ const Incentives = () => {
       <div className="campaigns-container1">
         <div className="wrapper1">
           <section>
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex justify-center items-center content-center gap-2">
               <span>
                 <Lottie
                   animationData={treasure}
@@ -161,38 +161,209 @@ const Incentives = () => {
                 />
               </span>
             </div>
-            <div className="cols1">
-              <div className="col1" data-aos="zoom-in">
-                <div className="container1">
-                  <div className="front1">
-                    <div className="profile-card1">
-                      <div className="img-container1">
-                        <img src={manasvi} alt="Manasvi" />
-                      </div>
-                      <div className="caption1">
-                        <p>Events & Fellowships Manager</p>
-                        <h4>7021920836</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center mt-8 lg:gap-8">
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
                       </div>
                     </div>
-                    {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
                   </div>
                 </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Hosting Partner
+                </h1>
               </div>
-              <div className="col1" data-aos="zoom-in">
-                <div className="container1">
-                  <div className="front1">
-                    <div className="profile-card1">
-                      <div className="img-container1">
-                        <img src={manasvi} alt="Manasvi" />
-                      </div>
-                      <div className="caption1">
-                        <p>Events & Fellowships Manager</p>
-                        <h4>7021920836</h4>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
                       </div>
                     </div>
-                    {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
                   </div>
                 </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Mentorship Partner
+                </h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Student Networking Partner
+                </h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Learning Partner
+                </h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Coding Partner
+                </h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-chelsea text-lg">Work Readiness Partner</h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>{" "}
+                <h1 className="font-chelsea text-lg">Audio Series Partner</h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Education Partner
+                </h1>
+              </div>
+              <div>
+                <div className="flex justify-center items-center mb-[-40px]">
+                  <div className="col1" data-aos="zoom-in">
+                    <div className="container1">
+                      <div className="front1">
+                        <div className="profile-card1">
+                          <div className="img-container1">
+                            <img src={manasvi} alt="Manasvi" />
+                          </div>
+                          <div className="caption1">
+                            <p>Events & Fellowships Manager</p>
+                            <h4>7021920836</h4>
+                          </div>
+                        </div>
+                        {/* <h3 className="name1">Manasvi Kushwaha</h3> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-chelsea text-lg">
+                  Official Travel Partner
+                </h1>
               </div>
             </div>
           </section>

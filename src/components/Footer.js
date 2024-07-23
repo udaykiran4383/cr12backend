@@ -67,6 +67,7 @@ import footer_left from "../assets/footer-left.png";
 import footer_right from "../assets/footer-right.png";
 import Contact from "./Contact";
 import SocialMediaBarHorizontal from "./SocialMediaBarHorizontal";
+import {Link as RouteLink} from 'react-router-dom';
 
 function Footer() {
   return (
@@ -106,7 +107,10 @@ function Footer() {
             />
           </span>
           <div className="footer-box-logo absolute z-[2]">
-            <img src={logo} alt="abhyuday logo" draggable="false" />
+            {/* <img src={logo} alt="abhyuday logo" draggable="false" /> */}
+            <RouteLink to="https://abhyudayiitb.org/" target="_blank">
+            <img src={logo} alt="Logo" className="w-32 md:w-48 ml-4 mr-4" />
+          </RouteLink>
           </div>
           <div className="footer-social absolute z-[2]">
             <SocialMediaBarHorizontal className="flex-row footer-social" />

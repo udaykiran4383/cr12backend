@@ -53,7 +53,7 @@ function Preloader() {
             }}
           >
             <tspan id="tspan4146" x="254.034" y="878.417" className="mt-4">
-              Loading...
+              Sailing...
             </tspan>
           </text>
         </svg>

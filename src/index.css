@@ -10,15 +10,18 @@
     }
   }
   html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 body{
   overflow-x: hidden;
+  width: 100%;
 }
 
-/* body{
+body{
     cursor: url('./assets/sword1.svg'), auto;
-} */
+}
 body::-webkit-scrollbar {
     width: 8px;
   }

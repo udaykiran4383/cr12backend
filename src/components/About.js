@@ -15,7 +15,7 @@ function About() {
             <div className="text-center px-4 flex flex-col justify-center items-center">
               <SectionTitle title="About Us" />
               <p
-                className="desc mb-4 lg:max-w-[50%] max-w-[60%] text-start lg:text-pretty font-oswald relative z-[2]"
+                className="desc mb-4 lg:max-w-[50%] max-w-[80%] text-start text-[12px] lg:text-[20px] lg:text-pretty font-oswald relative z-[2]"
                 data-aos="fade-up"
                 data-aos-duration="1900"
               >
@@ -25,7 +25,7 @@ function About() {
                 positive change through various initiatives. <br />
               </p>
               <p
-                className="desc mb-4 lg:max-w-[50%] max-w-[60%] text-start lg:text-pretty font-oswald relative z-[2]"
+                className="desc mb-4 lg:max-w-[50%] max-w-[80%] text-start text-[12px] lg:text-[20px] lg:text-pretty font-oswald relative z-[2]"
                 data-aos="fade-up"
                 data-aos-duration="1900"
               >

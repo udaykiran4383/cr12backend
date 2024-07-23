@@ -183,11 +183,10 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
+import {Link as RouteLink } from 'react-router-dom';
 import ablogo from "../assets/logo.png";
 
 const Nav = () => {
-  const navigate = useNavigate();
   const [navSticky, setNavSticky] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -207,9 +206,6 @@ const Nav = () => {
     setNavOpen(!navOpen);
   };
 
-  const handleClick = () => {
-    navigate("/login/student");
-  };
 
   return (
     <div
@@ -248,9 +244,9 @@ const Nav = () => {
           </li>
         </ul>
         <div className="font-bold text-white text-2xl">
-          <Link to="home" smooth={true} duration={500}>
+          <RouteLink to="https://abhyudayiitb.org/" target="_blank">
             <img src={ablogo} alt="Logo" className="w-32 md:w-48 ml-4 mr-4" />
-          </Link>
+          </RouteLink>
         </div>
         <ul className="lg:flex hidden items-center font-chelsea text-white space-x-10 lg:space-x-12 xl:space-x-14">
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
@@ -352,7 +348,7 @@ const Nav = () => {
               to="about"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               About
@@ -360,10 +356,10 @@ const Nav = () => {
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link
-              to="about"
+              to="incentives"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               Incentives
@@ -371,26 +367,32 @@ const Nav = () => {
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link
-              to="testimonials"
+              to="sponsors"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               Sponsors
             </Link>
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
-            <RouterLink to="https://www.google.com" className="nav_link">
+            <Link
+              to="faqs"
+              smooth={true}
+              offset={-80}
+              duration={1000}
+              className="nav_link"
+            >
               FAQs
-            </RouterLink>
+            </Link>
           </li>
           <li className="hover: cursor-pointer hover:text-[#ffd700]">
             <Link
               to="contact"
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={1000}
               className="nav_link"
             >
               Contact Us

@@ -107,6 +107,9 @@ footer .shape1 {
         position: relative;
         z-index: 0;
     }
+    .gif img{
+        height: 250px;
+    }
     .shape-left {
         left: 0;
     }

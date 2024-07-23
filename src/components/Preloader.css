@@ -61,7 +61,7 @@
     background-color: #230c3c;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .loader svg {

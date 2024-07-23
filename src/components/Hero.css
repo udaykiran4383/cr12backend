@@ -1,6 +1,44 @@
 #hero-section {
-    padding-top: 250px
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
 }
+/* .text_animation{
+    -webkit-animation: typing 5s steps(30, end),blink-caret 0.75s step-end infinite;
+    animation: typing 5s steps(30, end),blink-caret 0.75s step-end infinite;
+    border-right: 5px solid;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@-webkit-keyframes typing {
+    0%, 100% {
+      max-width: 0;
+    } 50% {
+        max-width: 100%;
+    }
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+        max-width: 0;
+    } 
+    50% {
+        max-width: 100%;
+    }
+  }
+  
+  @-webkit-keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  } */
 /* For background */
 .shape1 {
     position: relative;
@@ -42,28 +80,37 @@
 .boat {
     position: absolute;
     top: 70%;
+    left: 0px;
     z-index: -1
 }
+.hero-animation-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 .boatMove {
     -webkit-animation: Right 5s;
     animation-fill-mode: forwards;
     animation-delay: 1s
 }
 @-webkit-keyframes Right {
-    from {
+    /* from {
         -webkit-transform: translateX(0)
     }
     to {
         -webkit-transform: translateX(380px)
-    }
+    } */
 }
 @keyframes Right {
-    from {
+    /* from {
         -webkit-transform: translateX(0)
     }
     to {
         -webkit-transform: translateX(380px)
-    }
+    } */
+    to{
+        left:50%;
+     }
 }
 /* For MOON  */
 .moon {
@@ -79,19 +126,13 @@
 }
 
 @-webkit-keyframes Move {
-    from {
-        -webkit-transform: translate(0)
-    }
     to {
-        -webkit-transform: translateY(-560px)
+        top: 10%
     }
 }
 @keyframes Move {
-    from {
-        -webkit-transform: translate(0)
-    }
     to {
-        -webkit-transform: translateY(-560px)
+        top: 10%
     }
 }
 /* For SOCIAL MEDIA */
@@ -271,29 +312,53 @@
         background-color: #230c3c;
     }
     .boat{
-        top: 30%;
+        top: 35%;
+        left: 0px;
     }
     .boatMove img {
         width: 50%
     }
     @-webkit-keyframes Right {
-        from {
+        /* from {
             -webkit-transform: translateX(0)
         }
         to {
             -webkit-transform: translateX(130px)
-        }
+        } */
+        to{
+            top: 35%;
+            left:50%;
+         }
     }
     @keyframes Right {
-        from {
+        /* from {
             -webkit-transform: translateX(0)
         }
         to {
             -webkit-transform: translateX(130px)
-        }
+        } */
+         to{
+            left:50%;
+         }
     }
     .moon{
         top:70%;
+    }
+    .topMove {
+        -webkit-animation: Move 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s
+    }
+    
+    @-webkit-keyframes Move {
+        to {
+            top: 10%
+        }
+    }
+    @keyframes Move {
+        to {
+            top: 10%
+        }
     }
     .sc-icon {
         bottom: -20%;

@@ -43,7 +43,7 @@ function SocialMediaBarHorizontal() {
         data-animate="fadeInRight"
         data-delay="0.3s"
       >
-        <a href="https://www.linkedin.com/company/abhyuday-iit-bombay/" target="_blank">
+        <a href="https://www.linkedin.com/company/abhyuday-iit-bombay/" target="_blank" >
           <Linkedin />
         </a>
       </li>
