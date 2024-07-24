@@ -22,7 +22,7 @@ body{
 body{
     cursor: url('./assets/sword1.svg'), auto;
 }
-.register-btn, .close-btn, .hoverable, .col1, .profile-card:hover{
+.register-btn, .close-btn, .hoverable, .col1, .profile-card:hover, .animated li a{
   cursor: url('./assets/blood.svg'), auto;
 }
 body::-webkit-scrollbar {

@@ -62,12 +62,12 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../assets/logo.png";
-import footer_gif from "../assets/footer-gif.gif";
+import footer_gif from "../assets/footer-gif-new.gif";
 import footer_left from "../assets/footer-left.png";
 import footer_right from "../assets/footer-right.png";
 import Contact from "./Contact";
 import SocialMediaBarHorizontal from "./SocialMediaBarHorizontal";
-import {Link as RouteLink} from 'react-router-dom';
+import { Link as RouteLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -86,6 +86,11 @@ function Footer() {
             loading="lazy"
           />
         </span>
+        <div className="flex flex-col justify-center items-center">
+        <RouteLink to="https://abhyudayiitb.org/" target="_blank">
+        <img src={logo} alt="Abhyuday logo" draggable="false" loading="lazy" className="relative z-[24] w-[300px] lg:w-[800px]"/></RouteLink>
+        <h2 className="text-white font-chelsea font-bold text-lg text-pretty text-center lg:text-3xl">Inspiring Individuals, Transforming Communities</h2>
+        </div>
         <span className="shape-right">
           <img
             className="image2"
@@ -95,7 +100,7 @@ function Footer() {
             loading="lazy"
           />
         </span>
-        <div className="lg:pt-[20px] mydiv">
+        <div className="mydiv">
           <span className="gif">
             <img
               src={footer_gif}
@@ -106,16 +111,11 @@ function Footer() {
               loading="lazy"
             />
           </span>
-          <div className="footer-box-logo absolute z-[2]">
-            {/* <img src={logo} alt="abhyuday logo" draggable="false" /> */}
-            <RouteLink to="https://abhyudayiitb.org/" target="_blank">
-            <img src={logo} alt="Logo" className="w-32 md:w-48 ml-4 mr-4" />
-          </RouteLink>
-          </div>
-          <div className="footer-social absolute z-[2]">
+          <div className="flex justify-center items-center">
+          <div className="absolute bottom-1 z-[2] w-full">
             <SocialMediaBarHorizontal className="flex-row footer-social" />
           </div>
-        </div>
+        </div></div>
       </footer>
     </>
   );

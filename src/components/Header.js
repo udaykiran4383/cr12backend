@@ -223,9 +223,9 @@ const Nav = () => {
           <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="about"
-              smooth={true}
+              // smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               About
@@ -234,9 +234,9 @@ const Nav = () => {
           <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="incentives"
-              smooth={true}
+              // smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               Incentives
@@ -251,10 +251,11 @@ const Nav = () => {
         <ul className="lg:flex hidden items-center font-chelsea text-white space-x-10 lg:space-x-12 xl:space-x-14">
           <li className="hoverable hover:text-[#ffd700]">
             <Link
+            onClick={toggleNav}
               to="sponsors"
-              smooth={true}
+              // smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               Sponsors
@@ -262,10 +263,11 @@ const Nav = () => {
           </li>
           <li className="hoverable hover:text-[#ffd700]">
           <Link
+          
               to="faqs"
-              smooth={true}
+              // smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               FAQs
@@ -274,7 +276,7 @@ const Nav = () => {
           <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="contact"
-              smooth={true}
+              // smooth={true}
               offset={-80}
               duration={500}
               className="nav_link"
@@ -339,16 +341,17 @@ const Nav = () => {
       >
         <ul className="flex flex-col items-center font-chelsea space-y-4 p-4">
         <li className="hoverable hover:text-[#ffd700]">
-            <Link to="home" smooth={true} duration={500} className="nav_link">
+            <Link onClick={toggleNav} to="home" smooth={true} duration={500} className="nav_link">
               Home
             </Link>
           </li>
           <li className="hoverable hover:text-[#ffd700]">
             <Link
+            onClick={toggleNav}
               to="about"
               smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               About
@@ -356,10 +359,11 @@ const Nav = () => {
           </li>
           <li className="hoverable hover:text-[#ffd700]">
             <Link
+            onClick={toggleNav}
               to="incentives"
               smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               Incentives
@@ -367,10 +371,11 @@ const Nav = () => {
           </li>
           <li className="hoverable hover:text-[#ffd700]">
             <Link
+            onClick={toggleNav}
               to="sponsors"
               smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               Sponsors
@@ -378,10 +383,11 @@ const Nav = () => {
           </li>
           <li className="hoverable hover:text-[#ffd700]">
             <Link
+            onClick={toggleNav}
               to="faqs"
               smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               FAQs
@@ -389,10 +395,11 @@ const Nav = () => {
           </li>
           <li className="hoverable hover:text-[#ffd700]">
             <Link
+            onClick={toggleNav}
               to="contact"
               smooth={true}
               offset={-80}
-              duration={1000}
+              duration={500}
               className="nav_link"
             >
               Contact Us

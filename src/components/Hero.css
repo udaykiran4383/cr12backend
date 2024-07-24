@@ -32,7 +32,7 @@ body.popup-active {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 80%;
-    max-width: 600px;
+    max-width: 450px;
     position: relative;
   }
   
@@ -202,19 +202,23 @@ body.popup-active {
     right: 20px
 }
 .sc-icon li {
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    cursor: url('../assets/blood.svg')
 }
 
 .sc-icon li svg:hover path {
-    fill: #ffd700
+    fill: #ffd700;
+    cursor: url('../assets/blood.svg')
 }
 
 .sc-icon li svg {
-    transition: 0.30s
+    transition: 0.30s;
+    cursor: url('../assets/blood.svg')
 }
 
 .sc-icon li svg:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
+    cursor: url('../assets/blood.svg')
 }
 .scroll-icon {
     font-weight: 400;
