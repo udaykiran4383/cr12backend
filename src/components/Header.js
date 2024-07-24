@@ -215,12 +215,12 @@ const Nav = () => {
     >
       <div className="flex items-center z-10 h-[10vh] lg:h-[12vh] justify-between w-4/5 mx-auto">
         <ul className="lg:flex hidden items-center font-chelsea text-white space-x-10 lg:space-x-12 xl:space-x-14">
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link to="home" smooth={true} duration={500} className="nav_link">
               Home
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="about"
               smooth={true}
@@ -231,7 +231,7 @@ const Nav = () => {
               About
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="incentives"
               smooth={true}
@@ -245,11 +245,11 @@ const Nav = () => {
         </ul>
         <div className="font-bold text-white text-2xl">
           <RouteLink to="https://abhyudayiitb.org/" target="_blank">
-            <img src={ablogo} alt="Logo" className="w-32 md:w-48 ml-4 mr-4" />
+            <img src={ablogo} alt="Logo" className="w-32 md:w-48 ml-4 mr-4 hoverable" />
           </RouteLink>
         </div>
         <ul className="lg:flex hidden items-center font-chelsea text-white space-x-10 lg:space-x-12 xl:space-x-14">
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="sponsors"
               smooth={true}
@@ -260,7 +260,7 @@ const Nav = () => {
               Sponsors
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
           <Link
               to="faqs"
               smooth={true}
@@ -271,7 +271,7 @@ const Nav = () => {
               FAQs
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="contact"
               smooth={true}
@@ -338,12 +338,12 @@ const Nav = () => {
         id="navbarSupportedContent"
       >
         <ul className="flex flex-col items-center font-chelsea space-y-4 p-4">
-        <li className="hover: cursor-pointer hover:text-[#ffd700]">
+        <li className="hoverable hover:text-[#ffd700]">
             <Link to="home" smooth={true} duration={500} className="nav_link">
               Home
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="about"
               smooth={true}
@@ -354,7 +354,7 @@ const Nav = () => {
               About
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="incentives"
               smooth={true}
@@ -365,7 +365,7 @@ const Nav = () => {
               Incentives
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="sponsors"
               smooth={true}
@@ -376,7 +376,7 @@ const Nav = () => {
               Sponsors
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="faqs"
               smooth={true}
@@ -387,7 +387,7 @@ const Nav = () => {
               FAQs
             </Link>
           </li>
-          <li className="hover: cursor-pointer hover:text-[#ffd700]">
+          <li className="hoverable hover:text-[#ffd700]">
             <Link
               to="contact"
               smooth={true}

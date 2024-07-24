@@ -3,6 +3,66 @@
     display: flex;
     justify-content: center;
 }
+/* Blur effect on body when popup is active */
+body.popup-active {
+    overflow: hidden;
+  }
+  
+  body.popup-active > #hero-section {
+    filter: blur(5px);
+    pointer-events: none;
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  /* No blur effect on popup */
+  .popup-container:hover {
+    filter: none;
+  }
+  
+  /* Animation in scale */
+  @keyframes Move {
+     20% {
+          left: 10%
+      }
+  }
+  
+  
 /* .text_animation{
     -webkit-animation: typing 5s steps(30, end),blink-caret 0.75s step-end infinite;
     animation: typing 5s steps(30, end),blink-caret 0.75s step-end infinite;
@@ -184,7 +244,6 @@
     box-shadow: 0px 0px 25px 3px #fff;
     user-select: none;
     -webkit-user-drag: none;
-    cursor: pointer;
     text-align: center;
     line-height: 60px;
     font-size: 16px;

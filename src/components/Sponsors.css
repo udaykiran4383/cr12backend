@@ -13,7 +13,6 @@
   border-radius: 10px;
   height: 190px;
   width: 190px;
-  cursor: pointer;
 }
 
 .profile-card:hover .img-container {

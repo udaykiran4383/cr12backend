@@ -45,7 +45,7 @@ function FAQ() {
             {faqs.map((item, index) => (
               <div className="faq-item" key={index} data-aos="fade-up">
                 <button
-                  className="p-6 cursor-pointer border-b-2 text-start text-xl flex flex-col w-full"
+                  className="p-6 hoverable border-b-2 text-start text-xl flex flex-col w-full"
                   onClick={() => handleClick(index)}
                 >
                   <div className="flex justify-between items-center pb-3 w-full">

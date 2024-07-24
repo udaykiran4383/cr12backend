@@ -22,6 +22,9 @@ body{
 body{
     cursor: url('./assets/sword1.svg'), auto;
 }
+.register-btn, .close-btn, .hoverable, .col1, .profile-card:hover{
+  cursor: url('./assets/blood.svg'), auto;
+}
 body::-webkit-scrollbar {
     width: 8px;
   }

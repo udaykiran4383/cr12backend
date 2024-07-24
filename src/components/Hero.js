@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import banner from "../assets/banner-img.png";
 import boat from "../assets/boat.png";
 import moon from "../assets/moon.png";
 import SocialMediaBar from "./SocialMediaBar";
 import { Link } from "react-scroll";
-import {Link as RouteLink } from "react-router-dom";
+import GoogleLoginComponent from "./GoogleLoginComponent"; // Replace with your actual Google Login component path
 
 function Hero() {
+  const [showPopup, setShowPopup] = useState(false);
+
   useEffect(() => {
     // Prevent right-click on images
     const images = document.querySelectorAll("img");
@@ -26,18 +28,25 @@ function Hero() {
       });
     };
   }, []);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+    // Toggle body class to apply blur effect
+    document.body.classList.toggle("popup-active");
+  };
+
   return (
     <section id="hero-section">
       <div className="container">
-        <div className="flex flex-col justify-center items-start mx-auto space-y-20">
+        <div className="flex flex-col justify-center items-start mx-auto space-y-6">
           <div className="flex flex-col justify-center items-center mx-auto">
             <div className="inline-block">
               <h1
-                className="font-chelsea text-[#F4EDDF] text-[20px] lg:text-[65px] font-normal text_animation"
+                className="font-chelsea text-[#F4EDDF] text-[20px] lg:text-[65px] text-center max-w-[85%] mx-auto font-normal text_animation"
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                COLLEGE REPRESENTATIVE
+                COLLEGE REPRESENTATIVE PROGRAM
               </h1>
             </div>
             <h2
@@ -57,16 +66,15 @@ function Hero() {
             </h2>
             <button
               type="button"
-              className="font-chelsea font-bold"
+              className="font-chelsea font-bold register-btn"
               data-aos="fade-up"
               data-aos-duration="1500"
+              onClick={togglePopup}
             >
-              <RouteLink to="http://127.0.0.1:8000/accounts/google/login/" className="register-btn">
-                REGISTER NOW
-              </RouteLink>
+              REGISTER NOW
             </button>
           </div>
-          <div className="lg:pb-32 mob">
+          <div className="mob">
             <Link
               to="about"
               smooth={true}
@@ -76,7 +84,7 @@ function Hero() {
             >
               <span>
                 <svg
-                  className="scroll cursor-pointer"
+                  className="scroll hoverable"
                   width="193"
                   height="194"
                   viewBox="0 0 193 194"
@@ -98,7 +106,7 @@ function Hero() {
                   ></path>
                 </svg>
               </span>
-              <span className="scroll-font  cursor-pointer bg-[#230c3c]">
+              <span className="scroll-font hoverable bg-[#230c3c]">
                 Scroll down
               </span>
             </Link>
@@ -122,6 +130,20 @@ function Hero() {
           <img src={moon} alt="moon" draggable="false" />
         </span>
       </div>
+
+      {/* Popup */}
+      {showPopup && (
+        <div className="popup-container">
+          <div className="popup">
+            <button className="close-btn" onClick={togglePopup}>
+              Close
+            </button>
+            <div className="popup-content">
+              <GoogleLoginComponent /> {/* Replace with your Google Login component */}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
