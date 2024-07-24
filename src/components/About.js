@@ -6,9 +6,9 @@ import SectionTitle from "./SectionTitle";
 function About() {
   return (
     <section id="about" className="pb-3 bg-[#230c3c] pt-16">
-      <span className="shape6">
+      {/* <span className="shape6">
         <img src={strip} className="w-full" alt="strip-top" draggable="false" />
-      </span>
+      </span> */}
       <div className="container z-[25]">
         <div>
           <div className="col-lg-10 col-12 mx-auto">

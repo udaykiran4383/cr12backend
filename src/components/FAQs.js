@@ -17,7 +17,7 @@ function FAQ() {
     },
     {
       question: "How do I register for the program?",
-      answer: 'To register, click on the "Register Now" button on our website. You will need to fill in your details, choose whether you are a school or college representative, and then log in.',
+      answer: 'To register, click on the "Register Now" button on our website. You should login through google and then fill in your details, choose whether you are a school or college representative.',
     },
     {
       question: "What kind of tasks will we be doing?",

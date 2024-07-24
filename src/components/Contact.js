@@ -40,7 +40,8 @@ const Contact = () => {
                           href="https://www.instagram.com/pramod___1?igsh=MWt1M2swNGR5dnlvYw=="
                           target="_blank"
                         >
-                          <Insta />
+                          <div className="hover:text-red-700">
+                          <Insta /></div>
                         </a>
                       </span>
                       <span>

@@ -5,6 +5,7 @@ import boat from "../assets/boat.png";
 import moon from "../assets/moon.png";
 import SocialMediaBar from "./SocialMediaBar";
 import { Link } from "react-scroll";
+import {Link as RouteLink } from "react-router-dom";
 
 function Hero() {
   useEffect(() => {
@@ -60,9 +61,9 @@ function Hero() {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <Link to="https://www.google.com" className="register-btn">
+              <RouteLink to="http://127.0.0.1:8000/accounts/google/login/" className="register-btn">
                 REGISTER NOW
-              </Link>
+              </RouteLink>
             </button>
           </div>
           <div className="lg:pb-32 mob">
