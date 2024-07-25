@@ -61,7 +61,7 @@
 
 import React from "react";
 import "./Footer.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo_white.svg";
 import footer_gif from "../assets/footer-gif-new.gif";
 import footer_left from "../assets/footer-left.png";
 import footer_right from "../assets/footer-right.png";
@@ -88,7 +88,7 @@ function Footer() {
         </span>
         <div className="flex flex-col justify-center items-center">
         <RouteLink to="https://abhyudayiitb.org/" target="_blank">
-        <img src={logo} alt="Abhyuday logo" draggable="false" loading="lazy" className="relative z-[24] w-[300px] lg:w-[800px]"/></RouteLink>
+        <img src={logo} alt="Abhyuday logo" draggable="false" loading="lazy" className="relative z-[24] w-[300px] lg:w-[600px] mb-4"/></RouteLink>
         <h2 className="text-white font-chelsea font-bold text-lg text-pretty text-center lg:text-3xl">Inspiring Individuals, Transforming Communities</h2>
         </div>
         <span className="shape-right">
