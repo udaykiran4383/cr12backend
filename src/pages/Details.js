@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Details.css";
 import ParticlesComponent from "../components/Particles";
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
-  // Hardcoded states
+  const navigate = useNavigate();  // Hardcoded states
   const states = [
     "Andaman and Nicobar Islands",
     "Andhra Pradesh",
@@ -121,7 +122,11 @@ const Details = () => {
 
     axios.post('/api/submit-form/', data)
       .then(response => {
-        console.log("Form submitted successfully", response);
+        if (response.data.status) {
+          navigate('/dashboard'); // Navigate to /dashboard if status is true
+        } else {
+          console.error("Form submission failed");
+        }
       })
       .catch(error => {
         console.error("There was an error submitting the form!", error);

@@ -20,7 +20,7 @@ function About() {
                 data-aos-duration="1900"
               >
                 Abhyuday , IIT Bombay is a student-led organization that fosters
-                youth responsibility & leadership in India, inspiring and
+               responsibility & leadership in youth, inspiring and
                 empowering young individuals to contribute to society and drive
                 positive change through various initiatives. <br />
               </p>

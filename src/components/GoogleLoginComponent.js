@@ -47,8 +47,7 @@ function GoogleLoginComponent() {
       );
       if (response.data.newCreated) {
         navigate("/details");
-      }
-      console.log(response.data); // Assuming backend returns user data or success message
+      } // Assuming backend returns user data or success message
     } catch (error) {
       console.error("Error logging in with Google:", error);
     }
@@ -56,11 +55,10 @@ function GoogleLoginComponent() {
 
   const handleLoginSuccess = (credentialResponse) => {
     sendTokenToDjango(credentialResponse.credential);
-    console.log(credentialResponse);
   };
 
   const handleLoginError = () => {
-    console.log('Login Failed');
+    console.log("Login Failed");
   };
 
   return (

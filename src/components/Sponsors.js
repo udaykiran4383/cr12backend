@@ -5,6 +5,14 @@ import "./Sponsors.css";
 import boat from "../assets/boat.png";
 import coin from "../assets/coin.png";
 import SectionTitle from "./SectionTitle";
+import noticebard from '../assets/noticebard.jpg';
+import law from '../assets/law.jpg';
+import startup from '../assets/startup.png';
+import algasem from '../assets/algasem.svg';
+import badda from '../assets/badda.png';
+import tgh from '../assets/tgh.png';
+import youth from '../assets/youth.png';
+import her from '../assets/her-1.png';
 
 const Sponsors = () => {
   return (
@@ -26,7 +34,7 @@ const Sponsors = () => {
               <img
                 loading="lazy"
                 draggable="false"
-                src={boat}
+                src={noticebard}
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="800"
@@ -38,7 +46,7 @@ const Sponsors = () => {
               <img
                 loading="lazy"
                 draggable="false"
-                src={boat}
+                src={law}
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="800"
@@ -50,7 +58,7 @@ const Sponsors = () => {
               <img
                 loading="lazy"
                 draggable="false"
-                src={boat}
+                src={startup}
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="800"
@@ -62,7 +70,55 @@ const Sponsors = () => {
               <img
                 loading="lazy"
                 draggable="false"
-                src={boat}
+                src={algasem}
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="800"
+              />
+            </div>
+          </div>
+          <div className="profile-card">
+            <div className="img-container">
+              <img
+                loading="lazy"
+                draggable="false"
+                src={badda}
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="800"
+              />
+            </div>
+          </div>
+          <div className="profile-card">
+            <div className="img-container">
+              <img
+                loading="lazy"
+                draggable="false"
+                src={tgh}
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="800"
+              />
+            </div>
+          </div>
+          <div className="profile-card">
+            <div className="img-container">
+              <img
+                loading="lazy"
+                draggable="false"
+                src={youth}
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="800"
+              />
+            </div>
+          </div>
+          <div className="profile-card">
+            <div className="img-container">
+              <img
+                loading="lazy"
+                draggable="false"
+                src={her}
                 alt=""
                 data-aos="fade-up"
                 data-aos-duration="800"

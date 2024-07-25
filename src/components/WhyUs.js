@@ -2,10 +2,10 @@ import React from "react";
 import Lottie from "lottie-react";
 import treasure from "../assets/treasure.json";
 import "./WhyUs.css";
-import incen1 from "../assets/incen1.jpeg";
-import incen2 from "../assets/incen2.jpeg";
-import incen3 from "../assets/incen3.jpeg";
-import incen4 from "../assets/incen4.jpeg";
+import connection from "../assets/connection.jpg";
+import difference from "../assets/Designer.png";
+import represent from "../assets/represent.jpg";
+import skill from "../assets/skillset.jpg";
 import SectionTitle from "./SectionTitle";
 
 function WhyUs() {
@@ -24,7 +24,7 @@ function WhyUs() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src={incen1}
+                  src={skill}
                   alt="Front"
                   className="flip-card-image"
                   loading="lazy"
@@ -32,7 +32,7 @@ function WhyUs() {
                 />
               </div>
               <div className="flip-card-back">
-                <p className="text-3xl font-chelsea">Elevate your skill set</p>
+                <p className="text-3xl font-chelsea">Sharpen yer sea skills</p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ function WhyUs() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src={incen2}
+                  src={connection}
                   alt="Front"
                   className="flip-card-image"
                   loading="lazy"
@@ -52,7 +52,7 @@ function WhyUs() {
                 />
               </div>
               <div className="flip-card-back">
-                <p className="text-3xl font-chelsea">Expand your connection</p>
+                <p className="text-3xl font-chelsea">Forge new alliances</p>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ function WhyUs() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src={incen3}
+                  src={represent}
                   alt="Front"
                   className="flip-card-image"
                   loading="lazy"
@@ -72,7 +72,7 @@ function WhyUs() {
                 />
               </div>
               <div className="flip-card-back">
-                <p className="text-3xl font-chelsea">Represent your college</p>
+                <p className="text-3xl font-chelsea">Hoist yer college's colors</p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ function WhyUs() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src={incen4}
+                  src={difference}
                   alt="Front"
                   className="flip-card-image"
                   loading="lazy"
@@ -92,7 +92,7 @@ function WhyUs() {
                 />
               </div>
               <div className="flip-card-back">
-                <p className="text-3xl font-chelsea">Make a difference</p>
+                <p className="text-3xl font-chelsea">Leave yer mark on the world!</p>
               </div>
             </div>
           </div>

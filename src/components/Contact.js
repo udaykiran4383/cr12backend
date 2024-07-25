@@ -37,7 +37,7 @@ const Contact = () => {
                     <div className="social-media flex justify-center items-center gap-4">
                       <span>
                         <a
-                          href="https://www.instagram.com/pramod___1?igsh=MWt1M2swNGR5dnlvYw=="
+                          href="https://www.instagram.com/pramod_____1/?utm_source=ig_web_button_share_sheet"
                           target="_blank"
                         >
                           <div className="hover:text-red-700">
@@ -123,7 +123,7 @@ const Contact = () => {
                       <div className="social-media flex justify-center items-center gap-4">
                         <span>
                           <a
-                            href="https://www.instagram.com/ritika_sirohiya?igsh=MTR6OXh6cnl2amU0NQ=="
+                            href="https://www.instagram.com/i_m_garvitkulhari"
                             target="_blank"
                           >
                             <Insta />
@@ -131,7 +131,7 @@ const Contact = () => {
                         </span>
                         <span>
                           <a
-                            href="https://www.linkedin.com/in/ritika-sirohiya-337035279"
+                            href="https://www.linkedin.com/in/garvit-kulhari-7164b8259"
                             target="_blank"
                           >
                             <Linkedin />

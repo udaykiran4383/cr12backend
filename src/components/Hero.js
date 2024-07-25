@@ -46,7 +46,7 @@ function Hero() {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                COLLEGE REPRESENTATIVE PROGRAM
+                THE REPRESENTATIVE PROGRAM
               </h1>
             </div>
             <h2
