@@ -5,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Details from "./pages/Details.js";
+import FakePage from "./pages/fakepage.js";
+
 
 function App() {
   useEffect(() => {
@@ -27,6 +29,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/details" element={<Details />}></Route>
+        <Route path="/fakepage" element={<FakePage />}></Route>
+        
+
+       
       </Routes>
     </BrowserRouter>
   );

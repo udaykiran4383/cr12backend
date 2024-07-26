@@ -13,7 +13,6 @@ function getCookie(name) {
     const cookies = document.cookie.split(";");
     for (let i = 0; i < cookies.length; i++) {
       const cookie = cookies[i].trim();
-      // Check if the cookie name matches the name we're looking for
       if (cookie.substring(0, name.length + 1) === name + "=") {
         cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
         break;
@@ -25,29 +24,27 @@ function getCookie(name) {
 
 const clientId =
   "949228241511-mbfe9v2nh8u098587qflqstthjfo5oso.apps.googleusercontent.com";
-// const clientId ="949dfhgrthjkyjukhijkml,vhfygyu.googleusercontent.com"
 
 function GoogleLoginComponent() {
   const navigate = useNavigate();
 
   const sendTokenToDjango = async (token) => {
     try {
-      // Fetch CSRF token from cookies
       const csrftoken = getCookie("csrftoken");
 
-      // Set CSRF token in headers
       axios.defaults.headers.common["X-CSRFToken"] = csrftoken;
 
       const response = await axios.post(
         "http://127.0.0.1:8000/api/google-login/",
         { token },
         {
-          withCredentials: true, // Ensure credentials (cookies) are included in the request
+          withCredentials: true,
         }
       );
-      if (response.data.newCreated) {
-        navigate("/details");
-      } // Assuming backend returns user data or success message
+
+      if (response.data.redirectUrl) {
+        navigate(response.data.redirectUrl);
+      }
     } catch (error) {
       console.error("Error logging in with Google:", error);
     }
@@ -66,7 +63,6 @@ function GoogleLoginComponent() {
       <GoogleLogin
         onSuccess={handleLoginSuccess}
         onError={handleLoginError}
-        // useOneTap
       />
     </GoogleOAuthProvider>
   );
